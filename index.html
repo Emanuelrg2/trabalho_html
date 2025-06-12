@@ -9,14 +9,14 @@
 </head>
 <header class="header">
     <nav class="navbar">
-        <a class="links" href="./lista.html">Cadastro</a>
+        <a class="links" href="./index.html">Cadastro</a>
         <a class="links">Procurar</a>
-        <a class="links">Inserir</a>
+        <a class="links" href="./lista.html">Lista</a>
     </nav>
 </header>
-<body>
 
-    <h1>Mercado do teu pai</h1>
+<body>
+    <h2>Cadastrar produto</h2>
     <div class="container">
         <div class="lista">
             <form action="#" method="post">
@@ -25,32 +25,65 @@
                         <label class="label" for="name">Nome do produto</label>
                         <input class="input" type="text" required id="nome" name="nome"
                             placeholder="Insira o nome do produto.">
-                        <button type="button" class="meupa">Inserir</button>
                     </div>
                     <div class="l1">
                         <label class="label" for="codigo">Código do produto</label>
                         <input class="input" type="number" required id="codigo" name="codigo"
                             placeholder="Insira o código.">
-                        <button type="button" class="meupa">Inserir</button>
                     </div>
                     <div class="l1">
                         <label class="label" for="quantidade">Quantidade</label>
                         <input class="input" type="number" required id="quantidade" name="quantidade"
                             placeholder="Insira a quantidade">
-                        <button type="button" class="meupa">Inserir</button>
+
                     </div>
                     <div class="l1">
                         <label class="label" for="preco">Preço</label>
                         <input class="input" type="number" required id="preco" name="preco"
                             placeholder="Insira o preço">
-                        <button type="button" class="meupa">Inserir</button>
                     </div>
+                    <button type="button" class="meupa">Inserir</button>
                 </div>
             </form>
         </div>
     </div>
-
-
+    <h2>Procurar produto</h2>
+    <div class="container2">
+        <div class="lista">
+            <form action="#" method="post">
+                <div class="card">
+                    <div class="l1">
+                        <label class="label" for="name">Procurar Produto</label>
+                        <input class="input" type="text" required id="nome" name="nome"
+                            placeholder="Insira o código produto.">
+                    </div>
+                    <button type="button" class="meupa">Inserir</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <h2>Lista de produtos</h2>
+    <div class="container3">
+        <div class="lista">
+            <form action="#" method="post">
+                <div class="card">
+                    <table id="tabelaProdutos">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Nome</th>
+                                <th>Quantidade</th>
+                                <th>Preço (R$)</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>        
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
